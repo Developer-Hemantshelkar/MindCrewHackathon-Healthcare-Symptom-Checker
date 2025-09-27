@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Symptom Checker</title>
+    <style>
+        body {
+            background-image: url('HC.png');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        #mymenu {
+            background: rgba(0,60,100,0.5);
+            color: white;
+            text-align: right;
+            padding: 10px;
+        }
+        #mymenu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #mymenu ul li {
+            display: inline-block;
+            padding: 15px;
+        }
+        #mymenu ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #mydata {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .form-box {
+            background: rgba(0,0,100,0.6);
+            padding: 30px;
+            width: 400px;
+            margin: auto;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 10px 10px 20px black;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: none;
+        }
+        .b1 {
+            background: linear-gradient(blue, white);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px 0px 20px 0px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .b1:hover {
+            background: linear-gradient(white, blue);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <div id="mymenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Check Symptoms</a></li>
+            <li><a href="#">Hospitals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Form Section -->
+    <div id="mydata">
+        <div class="form-box">
+            <h2>Log Your Symptoms</h2>
+            <form action="HomeServer" method="post">
+                <textarea name="symptoms" placeholder="Enter your symptoms here..." required></textarea><br>
+                <button type="submit" class="b1">Get Suggestions</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

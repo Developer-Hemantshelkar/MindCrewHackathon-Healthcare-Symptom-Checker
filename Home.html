@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Symptom Checker</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image:url('HC.png');
+            color: black;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(0,50,100,0.5);
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            position: fixed;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #2a5298;
+        }
+
+        .container {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .container h2 {
+            font-size: 28px;
+            margin: 50px auto 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 50px auto 40px;
+            line-height: 1.6;
+        }
+
+        .start-btn {
+            padding: 15px 40px;
+            font-size: 18px;
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .start-btn:hover {
+            background: linear-gradient(to right, #2ecc71, #3498db);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Healthcare Symptom Checker</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Register.html">Register</a>
+            <a href="Register.html">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to the AI-Assisted Symptom Checker</h2>
+        <p>
+            This project aims to provide users a quick and intuitive way to log their symptoms and receive possible 
+            next steps based on rule-based analysis and AI-driven suggestions. 
+            It is designed to help individuals understand potential health conditions and encourage timely medical consultation.
+        </p>
+
+        <p>
+            Enter your symptoms, such as fever, cough, headache, or sore throat, and get suggestions on what actions 
+            to take next. This system is meant for **informational purposes only** and does not replace professional medical advice.
+        </p>
+
+        <a href="Login.html"><button class="start-btn">Start Checking Symptoms</button></a>
+    </div>
+
+    <footer>
+        &copy; 2025 Healthcare Hackathon | Developed with Java & Servlets
+    </footer>
+</body>
+</html>
